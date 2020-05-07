@@ -43,9 +43,9 @@ sudo yum install python3
 sudo pip3 install flask
 
 #copy file into my instace(type this comand in another terminal)
-sudo scp -i key_test.pem todolist.db ec2-user@ec2-52-70-97-129.compute-1.amazonaws.com:~/
+sudo scp -i key_test.pem todolist.db ec2-user@<id>.compute-1.amazonaws.com:~/
 #copy the directory
-sudo scp -i key_test.pem -r todolist ec2-user@ec2-52-70-97-129.compute-1.amazonaws.com:~/
+sudo scp -i key_test.pem -r todolist ec2-user@<id>.compute-1.amazonaws.com:~/
 python3 todolist.py
 
 # create a Dockerfile
